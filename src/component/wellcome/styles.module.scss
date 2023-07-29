@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(207, 203, 203);
+}
+
+.fullName {
+  width: 100%;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10rem 0 0 0;
+
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.job {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.4rem;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+.animate-text {
+  opacity: 1;
+}

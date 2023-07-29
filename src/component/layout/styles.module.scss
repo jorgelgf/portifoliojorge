@@ -1,0 +1,26 @@
+.containerLayout {
+  width: 100%;
+  height: 100%;
+  border: solid rgb(136, 133, 133) 1px;
+  padding: 0 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+
+  background-color: transparent;
+
+  animation: animeY 0.5s forwards;
+  transform: translateY(-5px);
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  @keyframes animeY {
+    to {
+      opacity: 1;
+      transform: initial;
+    }
+  }
+
+  @media (min-width: 432px) {
+    height: 92vh;
+  }
+}
