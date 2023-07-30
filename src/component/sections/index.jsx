@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-const Sections = ({ children, style }) => {
+const Sections = ({ children, ...props }) => {
   return (
-    <div style={style} className={styles.containerSection}>
+    <div {...props} className={styles.containerSection}>
       {children}
     </div>
   );

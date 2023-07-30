@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -19,14 +19,14 @@ const StylesColor = () => {
   };
   backgroundColor = localStorage.getItem("backgroundColor");
 
-  if (backgroundColor) {
+  useEffect(() => {
     document.documentElement.style.backgroundColor = backgroundColor;
-  }
+  }, [backgroundColor]);
 
   return (
     <div className={styles.container}>
       <span onClick={handleClickDark}>
-        <div className={`${styles.dark} ${styles.color}`}></div>
+        <div className={`${styles.dark}`}></div>
         Dark
       </span>
       <span onClick={handleClickLight}>

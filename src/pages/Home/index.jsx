@@ -6,7 +6,7 @@ import StylesColor from "../../component/stylesColor";
 import { useEffect, useState } from "react";
 import Welcome from "../../component/wellcome";
 import { projects } from "../../service/projects";
-console.log(projects);
+
 const Home = () => {
   const [boolWelcome, setBoolWelcome] = useState(true);
   const [selectHome, setSelectHome] = useState(false);
@@ -19,6 +19,23 @@ const Home = () => {
       setBoolWelcome(false);
     }, 3000);
   }, []);
+
+  //obj de estilo - lado direito
+  const sectionRight = {
+    display: "flex",
+    justifyContent: "space-around",
+    padding: "0rem 1rem 0rem 2rem",
+    fontWeight: "600",
+    fontSize: "1rem",
+  };
+  const sectionRightHome = {
+    display: "flex",
+    justifyContent: "flex-end",
+    padding: "0rem 1rem 0rem 2rem",
+    fontWeight: "600",
+    fontSize: "1rem",
+  };
+
   const handleClickHome = () => {
     setSelectHome(!selectHome);
     setSelectProject(true);
@@ -49,23 +66,15 @@ const Home = () => {
 
   const ShowProject = () => {
     return (
-      <div
-        style={{
-          height: "50%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-end",
-          fontSize: ".8rem",
-        }}
-      >
+      <div className={styles.containerProject}>
         {projects.map((i, index) => {
           return (
             <a
+              className={styles.aLink}
               href={i.github}
               target="_blank"
               key={index}
               rel="noreferrer"
-              style={{ textDecoration: "none", color: "rgb(172, 169, 169)" }}
             >
               {" "}
               <div>
@@ -90,7 +99,6 @@ const Home = () => {
             <p className={styles.job}>Desenvolvedor Web</p>
             <div className={styles.item}>
               <span onClick={handleClickHome} className={styles.easyAll}>
-                {" "}
                 {selectHome ? (
                   <p>home</p>
                 ) : (
@@ -121,7 +129,6 @@ const Home = () => {
                   <span
                     style={{
                       fontSize: "1.5rem",
-                      transition: " opacity 1s ease-out",
                     }}
                   >
                     ~
@@ -130,21 +137,12 @@ const Home = () => {
               </span>
             </div>
           </Sections>
-          <Sections
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              padding: "0rem 1rem 2rem 2rem",
-              fontWeight: "600",
-
-              fontSize: ".85rem",
-            }}
-          >
+          <Sections style={selectHome ? sectionRight : sectionRightHome}>
             {selectProject === false && ShowProject()}
             {selectHome === false && (
-              <span style={{ marginBottom: "1rem" }}>
-                Nascido em Janduís, Rio Grande do Norte. Sou programador WEB. Eu
-                acredito que a tecnologia veio para unir pessoas e negócios
+              <span className={styles.mission}>
+                Nascido em Janduís, Rio Grande do Norte. Eu acredito que a
+                tecnologia veio para unir pessoas e negócios
               </span>
             )}
           </Sections>
