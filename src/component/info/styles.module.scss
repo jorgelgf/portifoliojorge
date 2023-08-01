@@ -1,0 +1,27 @@
+.containerInfo {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 600px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0;
+  animation: anime 0.2s forwards;
+  padding-top: 5rem;
+  @media (min-width: 1000px) {
+    font-size: 1.2rem;
+  }
+}
+.startText {
+  font-size: 1.1rem;
+  @media (min-width: 1000px) {
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes anime {
+  to {
+    transition: opacity 0.2s ease-out;
+
+    opacity: 1;
+  }
+}

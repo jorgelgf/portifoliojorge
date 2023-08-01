@@ -6,7 +6,13 @@ import { useNavigate } from "react-router-dom";
 
 const StylesColor = () => {
   const Navigate = useNavigate();
+
   let backgroundColor;
+  backgroundColor = localStorage.getItem("backgroundColor");
+
+  useEffect(() => {
+    document.documentElement.style.backgroundColor = backgroundColor;
+  }, [backgroundColor]);
 
   const handleClickDark = () => {
     localStorage.setItem("backgroundColor", "rgb(39, 36, 36)");
@@ -14,14 +20,9 @@ const StylesColor = () => {
   };
 
   const handleClickLight = () => {
-    localStorage.setItem("backgroundColor", "rgb(241, 237, 237)");
+    localStorage.setItem("backgroundColor", "rgb(255, 251, 251)");
     Navigate("/");
   };
-  backgroundColor = localStorage.getItem("backgroundColor");
-
-  useEffect(() => {
-    document.documentElement.style.backgroundColor = backgroundColor;
-  }, [backgroundColor]);
 
   return (
     <div className={styles.container}>

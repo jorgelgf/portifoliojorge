@@ -6,6 +6,8 @@ import StylesColor from "../../component/stylesColor";
 import { useEffect, useState } from "react";
 import Welcome from "../../component/wellcome";
 import { projects } from "../../service/projects";
+import Info from "../../component/info";
+import Contact from "../../component/contact";
 
 const Home = () => {
   const [boolWelcome, setBoolWelcome] = useState(true);
@@ -76,10 +78,9 @@ const Home = () => {
               key={index}
               rel="noreferrer"
             >
-              {" "}
               <div>
                 <h4>{i.name.toUpperCase()}</h4>
-                <p style={{ color: "rgb(110, 109, 109)" }}>{i.info}</p>
+                <span style={{ color: "rgb(110, 109, 109)" }}>{i.info}</span>
                 <br />
               </div>
             </a>
@@ -95,36 +96,33 @@ const Home = () => {
       <div className={styles.container}>
         <Layout>
           <Sections>
-            <p className={styles.name}>Jorge Gurgel</p>{" "}
-            <p className={styles.job}>Desenvolvedor Web</p>
+            <span className={styles.name}>Jorge Gurgel</span>
+            <span className={styles.job}>Desenvolvedor Web</span>
             <div className={styles.item}>
               <span onClick={handleClickHome} className={styles.easyAll}>
                 {selectHome ? (
-                  <p>home</p>
+                  <span>Home</span>
                 ) : (
                   <span style={{ fontSize: "1.5rem" }}>~</span>
                 )}
               </span>
               <span onClick={handleClickProject} className={styles.easyAll}>
-                {" "}
                 {selectProject ? (
-                  <p>projeto</p>
+                  <span>Projetos</span>
                 ) : (
                   <span style={{ fontSize: "1.5rem" }}>~</span>
                 )}
               </span>
               <span onClick={handleClickInfo} className={styles.easyAll}>
-                {" "}
                 {selectInfo ? (
-                  <p>info</p>
+                  <span>Info</span>
                 ) : (
                   <span style={{ fontSize: "1.5rem" }}>~</span>
                 )}
               </span>
               <span onClick={handleClickContact} className={styles.easyAll}>
-                {" "}
                 {selectContact ? (
-                  <p>contatos</p>
+                  <span>Contatos</span>
                 ) : (
                   <span
                     style={{
@@ -137,7 +135,10 @@ const Home = () => {
               </span>
             </div>
           </Sections>
+
           <Sections style={selectHome ? sectionRight : sectionRightHome}>
+            {selectContact === false && <Contact />}
+            {selectInfo === false && <Info />}
             {selectProject === false && ShowProject()}
             {selectHome === false && (
               <span className={styles.mission}>

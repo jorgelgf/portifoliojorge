@@ -1,0 +1,33 @@
+.container {
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  animation: anime 0.2s forwards;
+  opacity: 0;
+  @media (min-width: 790px) {
+    flex-direction: row;
+  }
+
+  a {
+    margin: 0.7rem 1rem;
+    text-decoration: none;
+    color: rgb(172, 169, 169);
+    cursor: pointer;
+    :hover {
+      color: rgb(199, 198, 198);
+    }
+  }
+  p {
+    margin-top: 1rem;
+  }
+}
+
+@keyframes anime {
+  to {
+    transition: opacity 0.2s ease-out;
+
+    opacity: 1;
+  }
+}
