@@ -12,4 +12,4 @@ REACT - SASS
 
 <img src='https://i.ibb.co/ygT2L10/mob.png' alt='mobile'>
 
-Clique <a href=''>AQUI </a> para ver o site.
+Clique <a href='https://jorgegurgel.netlify.app/' target='-blank'>AQUI </a> para ver o site.
