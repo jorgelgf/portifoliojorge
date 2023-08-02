@@ -9,3 +9,22 @@ html {
   font-family: "Raleway", sans-serif;
   background-color: rgb(39, 36, 36);
 }
+
+//------  configurações scroll para g.chrome
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+//------
