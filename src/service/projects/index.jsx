@@ -1,3 +1,4 @@
+//objeto de projetos
 export const projects = [
   {
     name: "Gbook",
