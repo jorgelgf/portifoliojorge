@@ -49,8 +49,8 @@ export const projects = [
   },
   {
     name: "Meow",
-    info: "2023 - Página de um blog [em construção] ",
-    github: "https://github.com/jorgelgf/blog",
+    info: "2023 - Página de um blog  [CMS + backend + frontend] ",
+    github: "https://github.com/jorgelgf/mew.blog",
   },
 ];
 
