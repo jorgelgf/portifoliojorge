@@ -1,14 +1,14 @@
 # Portfólio
 
-## Tecnologias utilizadas
+## Technologies used
 
 REACT - SASS
 
-### Visão desktop
+### Desktop
 
 <img src='https://i.ibb.co/fSppxT8/desk.png' alt='desktop'>
 
-### Visão mobile
+### Mobile
 
 <img src='https://i.ibb.co/ygT2L10/mob.png' alt='mobile'>
 
