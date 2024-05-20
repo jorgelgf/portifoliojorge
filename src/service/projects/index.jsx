@@ -52,5 +52,10 @@ export const projects = [
     info: "2023 - Página de um blog  [CMS + backend + frontend] ",
     github: "https://github.com/jorgelgf/mew.blog",
   },
+  {
+    name: "GSC",
+    info: "2024 - Gerenciamento de Serviço de Condomínio [backend + frontend]",
+    github: "https://github.com/jorgelgf/frontendcond",
+  },
 ];
 
