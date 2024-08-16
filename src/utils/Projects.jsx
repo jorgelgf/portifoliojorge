@@ -36,12 +36,6 @@ export const projects = [
     info: "2022 - Projeto comercial para pedidos de água mineral",
     github: "https://github.com/jorgelgf/agua",
   },
-
-  {
-    name: "WaMe",
-    info: "2023 - Página envio de mensagens para whatsAppWeb ",
-    github: "https://github.com/jorgelgf/wame/blob/main/README.md",
-  },
   {
     name: "Cronologia",
     info: "2023 - Página para criação de cronologia ",
