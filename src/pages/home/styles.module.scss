@@ -4,24 +4,24 @@
   max-height: 600px;
   scrollbar-width: none;
   display: flex;
-  flex-direction: column-reverse;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .container {
   background-color: transparent;
   height: auto;
   width: 100vw;
-  color: rgb(170, 167, 167);
+  color: rgb(170, 170, 167);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 1rem 0 1rem 1rem;
+  padding: 0rem 0 1rem 1rem;
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding: 1rem 0 0 1rem;
   @media (min-width: 1000px) {

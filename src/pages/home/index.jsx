@@ -68,11 +68,16 @@ const Home = () => {
     setSelectContact(!selectContact);
     setSelectInfo(true);
   };
+  const scrollTop = () => {
+    return window.scrollTo(0, 0);
+  };
 
   const ShowProject = () => {
     return (
       <div className={styles.containerProject}>
         {projects.map((i, index) => {
+          scrollTop();
+
           return (
             <a
               className={styles.aLink}

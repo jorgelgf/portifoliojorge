@@ -57,5 +57,4 @@ export const projects = [
     info: "2024 - Gerenciamento de Serviço de Condomínio [backend + frontend]",
     github: "https://github.com/jorgelgf/frontendcond",
   },
-];
-
+].reverse();

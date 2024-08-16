@@ -5,8 +5,9 @@ export const Contact = () => {
   return (
     <div className={styles.container}>
       {Contacts.map((data) => {
+        console.log(data.name);
         return (
-          <a key={data.name} href={data.lin} target="_blank" rel="noreferrer">
+          <a key={data.name} href={data.link} target="_blank" rel="noreferrer">
             <div>{data.name}</div>
           </a>
         );
