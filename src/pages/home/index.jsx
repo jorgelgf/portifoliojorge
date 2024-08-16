@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import Layout from "../../component/layout/indes";
-import Sections from "../../component/sections";
-import StylesColor from "../../component/stylesColor";
 import { useEffect, useState } from "react";
-import Welcome from "../../component/wellcome";
-import { projects } from "../../service/projects";
-import Info from "../../component/info";
-import Contact from "../../component/contact";
+import { projects } from "../../utils/Projects";
+import {
+  Contact,
+  Info,
+  Layout,
+  Sections,
+  StylesColor,
+  Welcome,
+} from "../../component";
 
 const Home = () => {
   const [boolWelcome, setBoolWelcome] = useState(true);

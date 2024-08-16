@@ -3,6 +3,9 @@
   overflow-y: scroll;
   max-height: 600px;
   scrollbar-width: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
 }
 
 .container {

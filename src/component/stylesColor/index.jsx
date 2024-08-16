@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 //COMPONENTE DE MUDANÇA DE COR
 
-const StylesColor = () => {
+export const StylesColor = () => {
   const Navigate = useNavigate();
 
   let backgroundColor;
@@ -37,5 +37,3 @@ const StylesColor = () => {
     </div>
   );
 };
-
-export default StylesColor;

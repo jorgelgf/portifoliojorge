@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-const Welcome = () => {
+export const Welcome = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -37,5 +37,3 @@ const Welcome = () => {
     </div>
   );
 };
-
-export default Welcome;

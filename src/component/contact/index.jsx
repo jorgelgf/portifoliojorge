@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-const Contact = () => {
+export const Contact = () => {
   return (
     <div className={styles.container}>
       <a href="http://wa.me/5584996222569" target="_blank" rel="noreferrer">
@@ -26,5 +26,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;
