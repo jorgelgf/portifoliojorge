@@ -4,5 +4,6 @@ export const Contacts = [
   { link: "mailto:jlgurgelfernandes@gmail.com", name: "E-mail" },
   { link: "https://www.linkedin.com/in/jorgelgf", name: 'LinkedIn' },
   { link: "https://www.facebook.com/jorgeluisgf", name: "Facebook" },
-  { link: "https://github.com/jorgelgf", name: "Github" }
+  { link: "https://github.com/jorgelgf", name: "Github" },
+  { link: "https://github.com/jorgelgf/cv/tree/main", name: "Currículo" }
 ];
