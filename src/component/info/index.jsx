@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export const Info = () => {
   return (
-    <div className={styles.containerInfo}>
+    <session className={styles.containerInfo}>
       <div>
         <div>
           <i className={styles.startText}>
@@ -12,16 +12,17 @@ export const Info = () => {
         </div>
         <br />
         <div>
-          Minha trajetória é marcada por uma formação em redes de computadores e
-          um curso técnico em eletrônica, mas é como desenvolvedor web que
-          encontrei minha verdadeira paixão.
+          Minha trajetória profissional começou com um curso superior em redes
+          de computadores e um técnico em eletrônica. No entanto, foi como
+          desenvolvedor web que encontrei minha verdadeira paixão.
         </div>
       </div>
       <br />
       <div>
-        Atualmente, estou cursando uma pós em engenharia de software,
-        aprofundando meus conhecimentos e habilidades para criar experiências
-        incríveis na web.
+        Recentemente, concluí uma pós-graduação em Engenharia de Software e,
+        atualmente, estou cursando uma pós-graduação em Desenvolvimento
+        Fullstack para expandir ainda mais meus conhecimentos e habilidades na
+        área.
       </div>
       <br />
       <div>
@@ -37,8 +38,8 @@ export const Info = () => {
       </div>
       <br />
       <div>
-        Estou animado para explorar novos desafios e oportunidades no mundo da
-        tecnologia como desenvolvedor web!
+        Estou sempre animado para explorar novos desafios e oportunidades no
+        mundo da tecnologia como desenvolvedor web!
         <br />
         <br />
         <div
@@ -47,6 +48,6 @@ export const Info = () => {
           Jorge Gurgel
         </div>
       </div>
-    </div>
+    </session>
   );
 };

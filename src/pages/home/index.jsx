@@ -10,6 +10,7 @@ import {
   StylesColor,
   Welcome,
 } from "../../component";
+import { Data } from "../../utils/Data";
 
 const Home = () => {
   const [boolWelcome, setBoolWelcome] = useState(true);
@@ -143,10 +144,7 @@ const Home = () => {
             {selectInfo === false && <Info />}
             {selectProject === false && ShowProject()}
             {selectHome === false && (
-              <span className={styles.mission}>
-                Nascido em Janduís, Rio Grande do Norte. Eu acredito que a
-                tecnologia veio para unir pessoas e negócios
-              </span>
+              <span className={styles.mission}>{Data.mission}</span>
             )}
           </Sections>
         </Layout>

@@ -1,28 +1,16 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Contacts } from "../../utils/Contacts.tsx";
 export const Contact = () => {
   return (
     <div className={styles.container}>
-      <a href="http://wa.me/5584996222569" target="_blank" rel="noreferrer">
-        <div>Whatsapp</div>
-      </a>
-      <a href="mailto:jlgurgelfernandes@gmail.com" rel="noreferrer">
-        <div>E-mail</div>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jorgelgf/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div>LinkedIn</div>
-      </a>
-      <a
-        href="https://www.facebook.com/jorgeluisgf/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div>Facebook</div>
-      </a>
+      {Contacts.map((data) => {
+        return (
+          <a key={data.name} href={data.lin} target="_blank" rel="noreferrer">
+            <div>{data.name}</div>
+          </a>
+        );
+      })}
     </div>
   );
 };
